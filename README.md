@@ -28,6 +28,11 @@ int main() {
   if (!drmp3_init_file(&mp3, "song.mp3", NULL)) {
     printf("Couldn't open file!\n");
   } else {
+    printf("mp3 info:\n"
+           "    file:       %s\n"
+           "    channels:   %d\n"
+           "    sampleRate: %d\n",
+           "song.mp3", mp3.channels, mp3.sampleRate);
     drmp3_uninit(&mp3);
   }
   return 0;
