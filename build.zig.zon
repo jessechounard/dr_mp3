@@ -14,5 +14,6 @@
         "README.md",
         "build.zig",
         "build.zig.zon",
+        "dr_mp3.c",
     },
 }
