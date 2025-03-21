@@ -20,5 +20,15 @@ exe.root_module.linkLibrary(dr_mp3_lib);
 
 Finally, in your C++ file, you can use the library:
 ```cpp
-// add demo
-```
+#include <dr_mp3.h>
+#include <stdio.h>
+
+int main() {
+  drmp3 mp3;
+  if (!drmp3_init_file(&mp3, "song.mp3", NULL)) {
+    printf("Couldn't open file!\n");
+  } else {
+    drmp3_uninit(&mp3);
+  }
+  return 0;
+}```
