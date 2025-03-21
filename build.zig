@@ -14,7 +14,7 @@ pub fn build(b: *std.Build) void {
             "dr_mp3.c",
         },
     });
-    lib.installHeadersDirectory(upstream.path(""), "", .{ .include_extensions = &.{
+    lib.installHeadersDirectory(upstream.path("."), "", .{ .include_extensions = &.{
         "dr_mp3.h",
     } });
     b.installArtifact(lib);
