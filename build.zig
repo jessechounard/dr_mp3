@@ -13,9 +13,6 @@ pub fn build(b: *std.Build) void {
         .files = &.{
             "dr_mp3.c",
         },
-        .flags = &.{
-            "-DSPDLOG_COMPILED_LIB",
-        },
     });
     lib.installHeadersDirectory(upstream.path(""), "", .{ .include_extensions = &.{
         "dr_mp3.h",
