@@ -1,7 +1,7 @@
 .{
     .name = .dr_mp3,
     .version = "0.7.0",
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.15.0",
     .fingerprint = 0xe23b0027485d99dd,
     .dependencies = .{
         .dr_mp3 = .{
